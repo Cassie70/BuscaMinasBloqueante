@@ -148,7 +148,7 @@ public class Tablero implements Serializable, Cloneable {
 
     public void alternarBandera(int fila, int columna) {
 
-        if (!mascara[fila][columna] && banderasColocadas < 10) {
+        if (!mascara[fila][columna] && banderasColocadas < dificultad.getMinas()) {
             banderas[fila][columna] = !banderas[fila][columna];
 
             if (banderas[fila][columna]) {
